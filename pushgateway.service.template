@@ -7,7 +7,7 @@ After=network-online.target
 User=pushgateway
 Group=pushgateway
 Type=simple
-ExecStart=/usr/local/bin/pushgateway
+ExecStart=/usr/local/bin/pushgateway --web.listen-address=":__PORT__"
 
 [Install]
 WantedBy=multi-user.target

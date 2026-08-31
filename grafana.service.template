@@ -1,14 +1,14 @@
-    [Unit]
-    Description=Grafana
-    After=network.target
+[Unit]
+Description=Grafana
+After=network.target
     
-    [Service]
-    Type=simple
-    WorkingDirectory=/usr/local/grafana
-    ExecStart=/usr/local/grafana/bin/grafana server \
-      --config=/usr/local/grafana/conf/defaults.ini \
-      --homepath=/usr/local/grafana
-    Restart=always
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/grafana
+ExecStart=/usr/local/grafana/bin/grafana server \
+  --config=/usr/local/grafana/conf/defaults.ini \
+  --homepath=/usr/local/grafana
+Restart=always
     
-    [Install]
+[Install]
 WantedBy=multi-user.target

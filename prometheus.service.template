@@ -9,7 +9,7 @@ Type=simple
 ExecStart=/usr/local/bin/prometheus \
     --config.file /etc/prometheus/prometheus.yml \
     --storage.tsdb.path /var/lib/prometheus/ \
---web.liste-address=0.0.0.0:__PORT__
+--web.listen-address=:__PORT__
 Restart=always
 
 [Install]
