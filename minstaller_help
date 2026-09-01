@@ -1,0 +1,15 @@
+Interactive installer, updater, and manager for Prometheus-stack services:
+Node Exporter, Prometheus, Grafana, and Pushgateway.
+
+Options:
+  -h, --help      Display this help menu and exit
+
+Interactive Modes:
+  Install         Downloads and configures a service from GitHub releases
+  Update (u)      Upgrades an existing service while preserving data
+  Recover (r)     Reverts a service to a previously installed backup version
+  Delete (d)      Uninstalls the service, configurations, and system account
+
+Examples:
+  sudo ./minstaller.sh          Launch the interactive menu
+  ./minstaller.sh --help        Show this help text
