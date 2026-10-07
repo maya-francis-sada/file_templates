@@ -13,3 +13,4 @@ ExecReload=/usr/local/nginx/sbin/nginx -s reload
 KillMode=mixed
 
 [Install]
+WantedBy=multi-user.target
